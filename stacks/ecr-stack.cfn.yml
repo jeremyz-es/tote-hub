@@ -1,0 +1,85 @@
+---
+AWSTemplateFormatVersion: 2010-09-09
+Description: ECR Repository for Tote-Hub
+
+Parameters:
+  Environment:
+    Description: AWS Environment
+    Type: String
+    AllowedValues:
+      - staging
+      - prod
+
+Resources:
+  ECRRepository:
+    Type: AWS::ECR::Repository
+    DeletionPolicy: Retain
+    Properties:
+      RepositoryName: tote-hub
+      LifecyclePolicy:
+        LifecyclePolicyText: |
+          {
+          "rules": [
+            {
+              "rulePriority": 1,
+              "description": "Keep 10 latest tags",
+              "selection": {
+                "tagStatus": "tagged",
+                "tagPrefixList": [
+                  "latest"
+                ],
+                "countType": "imageCountMoreThan",
+                "countNumber": 10
+              },
+              "action": {
+                "type": "expire"
+              }
+            },
+            {
+              "rulePriority": 5,
+              "description": "Remove untagged images after 7 days",
+              "selection": {
+                "tagStatus": "untagged",
+                "countType": "sinceImagePushed",
+                "countUnit": "days",
+                "countNumber": 7
+              },
+              "action": {
+                "type": "expire"
+              }
+            },
+            {
+              "rulePriority": 6,
+              "description": "Keep max 30 tagged images",
+              "selection": {
+                "tagStatus": "any",
+                "countType": "imageCountMoreThan",
+                "countNumber": 30
+              },
+              "action": {
+                "type": "expire"
+              }
+            }
+          ]
+          }
+      RepositoryPolicyText:
+        Version: 2008-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              AWS: !Sub arn:aws:iam::${AWS::AccountId}:role/prefect-execution-role
+            Action:
+              - ecr:BatchCheckLayerAvailability
+              - ecr:BatchGetImage
+              - ecr:CompleteLayerUpload
+              - ecr:GetDownloadUrlForLayer
+              - ecr:InitiateLayerUpload
+              - ecr:PutImage
+              - ecr:UploadLayerPart
+
+Outputs:
+  Tote-HubRepo:
+    Description: Tote-Hub Repo
+    Value: !GetAtt ECRRepository.RepositoryUri
+    Export:
+      Name: Tote-HubRepo

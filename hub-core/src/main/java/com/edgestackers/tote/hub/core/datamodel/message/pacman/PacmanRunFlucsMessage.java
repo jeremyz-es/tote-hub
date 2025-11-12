@@ -1,0 +1,38 @@
+package com.edgestackers.tote.hub.core.datamodel.message.pacman;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+public record PacmanRunFlucsMessage(@JsonProperty("market_id") String marketId,
+                                    @JsonProperty("selection_id") String selectionId,
+                                    @JsonProperty("runner_total_matched") String runnerTotalMatched,
+                                    @JsonProperty("market_total_matched") String marketTotalMatched,
+                                    @JsonProperty("back_market_pct") double backMarketPct,
+                                    @JsonProperty("lay_market_pct") String layMarketPct,
+                                    @JsonProperty("traded_wap") double tradedWap,
+                                    @JsonProperty("atb_1p") double atb1p,
+                                    @JsonProperty("atb_2p") double atb2p,
+                                    @JsonProperty("atb_3p") double atb3p,
+                                    @JsonProperty("atb_1s") double atb1s,
+                                    @JsonProperty("atb_2s") double atb2s,
+                                    @JsonProperty("atb_3s") double atb3s,
+                                    @JsonProperty("atl_1p") double atl1p,
+                                    @JsonProperty("atl_2p") double atl2p,
+                                    @JsonProperty("atl_3p") double atl3p,
+                                    @JsonProperty("atl_1s") double atl1s,
+                                    @JsonProperty("atl_2s") double atl2s,
+                                    @JsonProperty("atl_3s") double atl3s,
+                                    @JsonProperty("traded_twap_last_30_seconds") double tradedTwap30s,
+                                    @JsonProperty("traded_twap_last_60_seconds") double tradedTwap60s,
+                                    @JsonProperty("traded_twap_last_120_seconds") double tradedTwap120s,
+                                    @JsonProperty("traded_twap_last_240_seconds") double tradedTwap240s,
+                                    @JsonProperty("traded_twap_last_300_seconds") double tradedTwap300s,
+                                    @JsonProperty("traded_twap_last_600_seconds") double tradedTwap600s,
+                                    @JsonProperty("traded_twap_last_900_seconds") double tradedTwap900s,
+                                    @JsonProperty("traded_volume_last_30_seconds") double tradedVolume30s,
+                                    @JsonProperty("traded_volume_last_60_seconds") double tradedVolume60s,
+                                    @JsonProperty("traded_volume_last_120_seconds") double tradedVolume120s,
+                                    @JsonProperty("traded_volume_last_240_seconds") double tradedVolume240s,
+                                    @JsonProperty("traded_volume_last_300_seconds") double tradedVolume300s,
+                                    @JsonProperty("traded_volume_last_600_seconds") double tradedVolume600s,
+                                    @JsonProperty("traded_volume_last_900_seconds") double tradedVolume900s) {
+}

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://filebet.amtote.com" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://filebet.amtote.com">
+    <wsdl:types>
+        <xsd:schema targetNamespace="http://filebet.amtote.com/Imports">
+            <xsd:import schemaLocation="xsd0.xsd" namespace="http://tempuri.org/"/>
+            <xsd:import schemaLocation="xsd1.xsd" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+            <xsd:import schemaLocation="xsd2.xsd" namespace="http://schemas.datacontract.org/2004/07/FileBetService"/>
+            <xsd:import schemaLocation="xsd3.xsd" namespace="http://filebet.amtote.com"/>
+            <xsd:import schemaLocation="xsd4.xsd" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        </xsd:schema>
+    </wsdl:types>
+    <wsdl:message name="IService_GetHealth_InputMessage">
+        <wsdl:part xmlns:q1="http://tempuri.org/" name="parameters" element="q1:GetHealth"/>
+    </wsdl:message>
+    <wsdl:message name="IService_GetHealth_OutputMessage">
+        <wsdl:part xmlns:q2="http://tempuri.org/" name="parameters" element="q2:GetHealthResponse"/>
+    </wsdl:message>
+    <wsdl:message name="IService_GetInfo_InputMessage">
+        <wsdl:part xmlns:q3="http://tempuri.org/" name="parameters" element="q3:GetInfo"/>
+    </wsdl:message>
+    <wsdl:message name="IService_GetInfo_OutputMessage">
+        <wsdl:part xmlns:q4="http://tempuri.org/" name="parameters" element="q4:GetInfoResponse"/>
+    </wsdl:message>
+    <wsdl:message name="IService_GetVersion_InputMessage">
+        <wsdl:part xmlns:q5="http://tempuri.org/" name="parameters" element="q5:GetVersion"/>
+    </wsdl:message>
+    <wsdl:message name="IService_GetVersion_OutputMessage">
+        <wsdl:part xmlns:q6="http://tempuri.org/" name="parameters" element="q6:GetVersionResponse"/>
+    </wsdl:message>
+    <wsdl:message name="IService_OpenChannel_InputMessage">
+        <wsdl:part name="parameters" element="tns:OpenChannel"/>
+    </wsdl:message>
+    <wsdl:message name="IService_OpenChannel_OutputMessage">
+        <wsdl:part name="parameters" element="tns:OpenChannelResponse"/>
+    </wsdl:message>
+    <wsdl:message name="IService_SubmitBets_InputMessage">
+        <wsdl:part name="parameters" element="tns:SubmitBets"/>
+    </wsdl:message>
+    <wsdl:message name="IService_SubmitBets_OutputMessage">
+        <wsdl:part name="parameters" element="tns:SubmitBetsResponse"/>
+    </wsdl:message>
+    <wsdl:message name="IService_CloseChannel_InputMessage">
+        <wsdl:part name="parameters" element="tns:CloseChannel"/>
+    </wsdl:message>
+    <wsdl:message name="IService_CloseChannel_OutputMessage">
+        <wsdl:part name="parameters" element="tns:CloseChannelResponse"/>
+    </wsdl:message>
+    <wsdl:message name="IService_ResetChannels_InputMessage">
+        <wsdl:part name="parameters" element="tns:ResetChannels"/>
+    </wsdl:message>
+    <wsdl:message name="IService_ResetChannels_OutputMessage">
+        <wsdl:part name="parameters" element="tns:ResetChannelsResponse"/>
+    </wsdl:message>
+    <wsdl:message name="IService_CheckStatus_InputMessage">
+        <wsdl:part name="parameters" element="tns:CheckStatus"/>
+    </wsdl:message>
+    <wsdl:message name="IService_CheckStatus_OutputMessage">
+        <wsdl:part name="parameters" element="tns:CheckStatusResponse"/>
+    </wsdl:message>
+    <wsdl:message name="IService_Initialize_InputMessage">
+        <wsdl:part name="parameters" element="tns:Initialize"/>
+    </wsdl:message>
+    <wsdl:message name="IService_Initialize_OutputMessage">
+        <wsdl:part name="parameters" element="tns:InitializeResponse"/>
+    </wsdl:message>
+    <wsdl:message name="IService_GetPrograms_InputMessage">
+        <wsdl:part name="parameters" element="tns:GetPrograms"/>
+    </wsdl:message>
+    <wsdl:message name="IService_GetPrograms_OutputMessage">
+        <wsdl:part name="parameters" element="tns:GetProgramsResponse"/>
+    </wsdl:message>
+    <wsdl:message name="IService_UpdateBalance_InputMessage">
+        <wsdl:part name="parameters" element="tns:UpdateBalance"/>
+    </wsdl:message>
+    <wsdl:message name="IService_UpdateBalance_OutputMessage">
+        <wsdl:part name="parameters" element="tns:UpdateBalanceResponse"/>
+    </wsdl:message>
+    <wsdl:message name="IService_RequestAvailablePrograms_InputMessage">
+        <wsdl:part name="parameters" element="tns:RequestAvailablePrograms"/>
+    </wsdl:message>
+    <wsdl:message name="IService_RequestAvailablePrograms_OutputMessage">
+        <wsdl:part name="parameters" element="tns:RequestAvailableProgramsResponse"/>
+    </wsdl:message>
+    <wsdl:message name="IService_RequestProgramCombine_InputMessage">
+        <wsdl:part name="parameters" element="tns:RequestProgramCombine"/>
+    </wsdl:message>
+    <wsdl:message name="IService_RequestProgramCombine_OutputMessage">
+        <wsdl:part name="parameters" element="tns:RequestProgramCombineResponse"/>
+    </wsdl:message>
+    <wsdl:message name="IService_RequestItpData_InputMessage">
+        <wsdl:part name="parameters" element="tns:RequestItpData"/>
+    </wsdl:message>
+    <wsdl:message name="IService_RequestItpData_OutputMessage">
+        <wsdl:part name="parameters" element="tns:RequestItpDataResponse"/>
+    </wsdl:message>
+    <wsdl:message name="IService_GetResponseFileNames_InputMessage">
+        <wsdl:part name="parameters" element="tns:GetResponseFileNames"/>
+    </wsdl:message>
+    <wsdl:message name="IService_GetResponseFileNames_OutputMessage">
+        <wsdl:part name="parameters" element="tns:GetResponseFileNamesResponse"/>
+    </wsdl:message>
+    <wsdl:message name="IService_GetResponseFile_InputMessage">
+        <wsdl:part name="parameters" element="tns:GetResponseFile"/>
+    </wsdl:message>
+    <wsdl:message name="IService_GetResponseFile_OutputMessage">
+        <wsdl:part name="parameters" element="tns:GetResponseFileResponse"/>
+    </wsdl:message>
+    <wsdl:portType name="IService">
+        <wsdl:operation name="GetHealth">
+            <wsdl:input wsaw:Action="http://tempuri.org/IMonitoring/GetHealth" message="tns:IService_GetHealth_InputMessage"/>
+            <wsdl:output wsaw:Action="http://tempuri.org/IMonitoring/GetHealthResponse" message="tns:IService_GetHealth_OutputMessage"/>
+        </wsdl:operation>
+        <wsdl:operation name="GetInfo">
+            <wsdl:input wsaw:Action="http://tempuri.org/IMonitoring/GetInfo" message="tns:IService_GetInfo_InputMessage"/>
+            <wsdl:output wsaw:Action="http://tempuri.org/IMonitoring/GetInfoResponse" message="tns:IService_GetInfo_OutputMessage"/>
+        </wsdl:operation>
+        <wsdl:operation name="GetVersion">
+            <wsdl:input wsaw:Action="http://tempuri.org/IMonitoring/GetVersion" message="tns:IService_GetVersion_InputMessage"/>
+            <wsdl:output wsaw:Action="http://tempuri.org/IMonitoring/GetVersionResponse" message="tns:IService_GetVersion_OutputMessage"/>
+        </wsdl:operation>
+        <wsdl:operation name="OpenChannel">
+            <wsdl:input wsaw:Action="http://filebet.amtote.com/IService/OpenChannel" message="tns:IService_OpenChannel_InputMessage"/>
+            <wsdl:output wsaw:Action="http://filebet.amtote.com/IService/OpenChannelResponse" message="tns:IService_OpenChannel_OutputMessage"/>
+        </wsdl:operation>
+        <wsdl:operation name="SubmitBets">
+            <wsdl:input wsaw:Action="http://filebet.amtote.com/IService/SubmitBets" message="tns:IService_SubmitBets_InputMessage"/>
+            <wsdl:output wsaw:Action="http://filebet.amtote.com/IService/SubmitBetsResponse" message="tns:IService_SubmitBets_OutputMessage"/>
+        </wsdl:operation>
+        <wsdl:operation name="CloseChannel">
+            <wsdl:input wsaw:Action="http://filebet.amtote.com/IService/CloseChannel" message="tns:IService_CloseChannel_InputMessage"/>
+            <wsdl:output wsaw:Action="http://filebet.amtote.com/IService/CloseChannelResponse" message="tns:IService_CloseChannel_OutputMessage"/>
+        </wsdl:operation>
+        <wsdl:operation name="ResetChannels">
+            <wsdl:input wsaw:Action="http://filebet.amtote.com/IService/ResetChannels" message="tns:IService_ResetChannels_InputMessage"/>
+            <wsdl:output wsaw:Action="http://filebet.amtote.com/IService/ResetChannelsResponse" message="tns:IService_ResetChannels_OutputMessage"/>
+        </wsdl:operation>
+        <wsdl:operation name="CheckStatus">
+            <wsdl:input wsaw:Action="http://filebet.amtote.com/IService/CheckStatus" message="tns:IService_CheckStatus_InputMessage"/>
+            <wsdl:output wsaw:Action="http://filebet.amtote.com/IService/CheckStatusResponse" message="tns:IService_CheckStatus_OutputMessage"/>
+        </wsdl:operation>
+        <wsdl:operation name="Initialize">
+            <wsdl:input wsaw:Action="http://filebet.amtote.com/IService/Initialize" message="tns:IService_Initialize_InputMessage"/>
+            <wsdl:output wsaw:Action="http://filebet.amtote.com/IService/InitializeResponse" message="tns:IService_Initialize_OutputMessage"/>
+        </wsdl:operation>
+        <wsdl:operation name="GetPrograms">
+            <wsdl:input wsaw:Action="http://filebet.amtote.com/IService/GetPrograms" message="tns:IService_GetPrograms_InputMessage"/>
+            <wsdl:output wsaw:Action="http://filebet.amtote.com/IService/GetProgramsResponse" message="tns:IService_GetPrograms_OutputMessage"/>
+        </wsdl:operation>
+        <wsdl:operation name="UpdateBalance">
+            <wsdl:input wsaw:Action="http://filebet.amtote.com/IService/UpdateBalance" message="tns:IService_UpdateBalance_InputMessage"/>
+            <wsdl:output wsaw:Action="http://filebet.amtote.com/IService/UpdateBalanceResponse" message="tns:IService_UpdateBalance_OutputMessage"/>
+        </wsdl:operation>
+        <wsdl:operation name="RequestAvailablePrograms">
+            <wsdl:input wsaw:Action="http://filebet.amtote.com/IService/RequestAvailablePrograms" message="tns:IService_RequestAvailablePrograms_InputMessage"/>
+            <wsdl:output wsaw:Action="http://filebet.amtote.com/IService/RequestAvailableProgramsResponse" message="tns:IService_RequestAvailablePrograms_OutputMessage"/>
+        </wsdl:operation>
+        <wsdl:operation name="RequestProgramCombine">
+            <wsdl:input wsaw:Action="http://filebet.amtote.com/IService/RequestProgramCombine" message="tns:IService_RequestProgramCombine_InputMessage"/>
+            <wsdl:output wsaw:Action="http://filebet.amtote.com/IService/RequestProgramCombineResponse" message="tns:IService_RequestProgramCombine_OutputMessage"/>
+        </wsdl:operation>
+        <wsdl:operation name="RequestItpData">
+            <wsdl:input wsaw:Action="http://filebet.amtote.com/IService/RequestItpData" message="tns:IService_RequestItpData_InputMessage"/>
+            <wsdl:output wsaw:Action="http://filebet.amtote.com/IService/RequestItpDataResponse" message="tns:IService_RequestItpData_OutputMessage"/>
+        </wsdl:operation>
+        <wsdl:operation name="GetResponseFileNames">
+            <wsdl:input wsaw:Action="http://filebet.amtote.com/IService/GetResponseFileNames" message="tns:IService_GetResponseFileNames_InputMessage"/>
+            <wsdl:output wsaw:Action="http://filebet.amtote.com/IService/GetResponseFileNamesResponse" message="tns:IService_GetResponseFileNames_OutputMessage"/>
+        </wsdl:operation>
+        <wsdl:operation name="GetResponseFile">
+            <wsdl:input wsaw:Action="http://filebet.amtote.com/IService/GetResponseFile" message="tns:IService_GetResponseFile_InputMessage"/>
+            <wsdl:output wsaw:Action="http://filebet.amtote.com/IService/GetResponseFileResponse" message="tns:IService_GetResponseFile_OutputMessage"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

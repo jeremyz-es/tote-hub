@@ -1,0 +1,50 @@
+.root { -fx-font-family: "Apple LiSung"; -fx-background-color: #1c1f24; }
+.selected-row { -fx-background-color: linear-gradient(to bottom right, hotpink, pink); -fx-font-weight: bold; }
+.table-view .table-cell { -fx-alignment: center; }
+.table-cell {-fx-border-color: black lightgray lightgray black; -fx-border-width: 0 1 1 0; -fx-alignment: center; }
+.table-cell .button { -fx-max-height: 15px; -fx-font-size: 10px; }
+.tick-button { -fx-background-color: darkgray; -fx-text-fill: white; -fx-font-size: 13px; }
+.label { -fx-min-height: 25px; }
+
+.titled-pane > .title { -fx-background-color: rgb(42, 42, 42); -fx-text-fill: white; }
+.titled-pane > .title > .text { -fx-fill: white; -fx-font-size: 14px; }
+
+.titled-pane > .content {
+    -fx-background-color: #1c1f24;
+    -fx-border-color: rgb(42, 42, 42);
+    -fx-border-width: 10 20 20 20;
+    -fx-border-style: none solid solid solid;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+.combo-box { -fx-background-color: rgb(42, 42, 42); -fx-text-fill: white; }
+.combo-box .list-cell { -fx-background-color: rgb(42, 42, 42); -fx-text-fill: white; }
+.button { -fx-background-color: rgb(42, 42, 42); -fx-text-fill: white; }
+
+.scroll-pane { -fx-background: #1c1f24; -fx-background-color: rgb(42, 42, 42); }
+.scroll-bar .thumb { -fx-background-color: rgb(80, 80, 80); }
+.scroll-bar .track { -fx-background-color: rgb(42, 42, 42); }
+.scroll-bar .increment-button, .scroll-bar .decrement-button { -fx-background-color: rgb(42, 42, 42); -fx-padding: 0; -fx-shape: ""; }
+.scroll-pane .corner { -fx-background-color: rgb(42, 42, 42); }
+
+.split-pane:vertical > .split-pane-divider {
+    -fx-padding: 5;
+    -fx-background-color: #1c1f24;
+    -fx-background-insets: 0;
+}
+
+.split-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.tab-pane { -fx-background-color: #1c1f24; }
+.tab-pane > .tab-header-area > .tab-header-background { -fx-background-color: #1c1f24; }
+.tab-pane .tab .tab-label { -fx-text-fill: white; }
+.tab-pane .tab { -fx-background-color: #3b3b34; }
+.tab-pane .tab:selected { -fx-background-color: white; }
+.tab-pane .tab:selected .tab-label { -fx-text-fill: black; }

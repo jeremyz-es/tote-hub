@@ -1,0 +1,6 @@
+[tool.poetry]
+name = "tote-hub"
+version = "0.1.0"
+description = ""
+authors = ["Jeremy <jeremy@edgestackers.com>"]
+readme = "README.md"
