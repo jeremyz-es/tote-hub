@@ -1,7 +1,5 @@
 package com.edgestackers.opticon.gui.view.strategy;
 
-import com.edgestackers.core.datamodel.tote.ToteBetType;
-import com.edgestackers.core.datamodel.tote.TotePoolJurisdiction;
 import com.edgestackers.opticon.common.datamodel.OpticonInitContext;
 import com.edgestackers.opticon.gui.control.listener.ExoticInstrumentFilterListener;
 import com.edgestackers.opticon.gui.datamodel.filter.ExoticInstrumentFilter;
@@ -10,6 +8,8 @@ import com.edgestackers.opticon.gui.view.cycles.CycleViewPaneController;
 import com.edgestackers.opticon.gui.view.pacman.PacmanFlucsViewPaneController;
 import com.edgestackers.opticon.gui.view.race.RaceViewPaneController;
 import com.edgestackers.opticon.gui.view.turbo.TurboViewPaneController;
+import com.edgestackers.tote.hub.core.datamodel.core.ToteBetType;
+import com.edgestackers.tote.hub.core.datamodel.core.TotePoolJurisdiction;
 import javafx.collections.FXCollections;
 
 import java.util.HashSet;

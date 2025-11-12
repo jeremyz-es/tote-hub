@@ -1,12 +1,12 @@
 package com.edgestackers.opticon.gui.view.strategy;
 
-import com.edgestackers.core.datamodel.tote.ToteBetType;
-import com.edgestackers.core.datamodel.tote.TotePoolJurisdiction;
 import com.edgestackers.opticon.gui.settings.OpticonSceneSettings;
 import com.edgestackers.opticon.gui.view.cycles.CycleViewPane;
 import com.edgestackers.opticon.gui.view.pacman.PacmanFlucsViewPane;
 import com.edgestackers.opticon.gui.view.turbo.TurboViewPane;
 import com.edgestackers.opticon.gui.view.util.OpticonGuiResourceUtil;
+import com.edgestackers.tote.hub.core.datamodel.core.ToteBetType;
+import com.edgestackers.tote.hub.core.datamodel.core.TotePoolJurisdiction;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Tab;

@@ -2,12 +2,12 @@ package com.edgestackers.opticon.gui.datamodel.run;
 
 import com.edgestackers.opticon.common.datamodel.OpticonRunSummary;
 import com.edgestackers.opticon.common.datamodel.OpticonWinMarketSummary;
-import com.edgestackers.core.datamodel.tote.TotePoolJurisdiction;
+import com.edgestackers.tote.hub.core.datamodel.core.TotePoolJurisdiction;
 import jakarta.annotation.Nullable;
 
 import java.util.Map;
 
-import static com.edgestackers.core.util.TimeUtil.*;
+import static com.edgestackers.tote.hub.core.util.TimeUtil.*;
 
 public enum OpticonRunSummaryEntryConverter {
     ;

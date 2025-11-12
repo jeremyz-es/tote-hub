@@ -1,8 +1,6 @@
 
 module opticon.gui {
 
-    requires com.edgestackers.core;
-    requires tote.common;
     requires opticon.common;
     requires com.fasterxml.jackson.annotation;
     requires com.fasterxml.jackson.core;
@@ -19,7 +17,6 @@ module opticon.gui {
     requires javax.inject;
     requires dagger;
     requires eu.hansolo.tilesfx;
-    requires caesar.common;
     requires hub.core;
 
     exports com.edgestackers.opticon.gui to javafx.graphics;

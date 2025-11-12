@@ -1,13 +1,9 @@
 package com.edgestackers.opticon.gui.view.tote;
 
-import com.edgestackers.core.datamodel.tote.ToteBetType;
 import com.edgestackers.opticon.gui.settings.OpticonSceneSettings;
 import com.edgestackers.opticon.gui.view.race.RaceViewPane;
 import com.edgestackers.opticon.gui.view.util.AccountBalanceTile;
-import com.edgestackers.core.datamodel.tote.TotePoolJurisdiction;
-import eu.hansolo.tilesfx.Tile;
 import javafx.scene.Scene;
-import javafx.scene.control.ComboBox;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TitledPane;
 import javafx.scene.layout.*;

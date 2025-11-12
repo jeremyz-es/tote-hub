@@ -1,13 +1,13 @@
 package com.edgestackers.opticon.gui.view.turbo;
 
-import com.edgestackers.core.datamodel.tote.ToteBetType;
 import com.edgestackers.opticon.common.datamodel.OpticonDividendPredictionUpdate;
 import com.edgestackers.opticon.common.datamodel.OpticonTheoUpdate;
 import com.edgestackers.opticon.gui.datamodel.OpticonRaceSwitchKey;
 import com.edgestackers.opticon.gui.datamodel.filter.ExoticInstrumentFilter;
 import com.edgestackers.opticon.gui.datamodel.turbo.OpticonDividendPredictionUpdateEntry;
 import com.edgestackers.opticon.gui.datamodel.turbo.OpticonTheoUpdateEntry;
-import com.edgestackers.core.datamodel.tote.TotePoolJurisdiction;
+import com.edgestackers.tote.hub.core.datamodel.core.ToteBetType;
+import com.edgestackers.tote.hub.core.datamodel.core.TotePoolJurisdiction;
 import jakarta.annotation.Nullable;
 import javafx.application.Platform;
 import javafx.beans.property.SimpleObjectProperty;

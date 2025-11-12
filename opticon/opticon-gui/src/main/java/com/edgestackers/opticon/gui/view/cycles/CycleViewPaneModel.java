@@ -1,11 +1,11 @@
 package com.edgestackers.opticon.gui.view.cycles;
 
-import com.edgestackers.core.datamodel.tote.ToteBetType;
 import com.edgestackers.opticon.common.datamodel.OpticonMarketCycleUpdate;
 import com.edgestackers.opticon.gui.datamodel.OpticonRaceSwitchKey;
 import com.edgestackers.opticon.gui.datamodel.cycles.OpticonMarketCycleUpdateEntry;
 import com.edgestackers.opticon.gui.datamodel.filter.ExoticInstrumentFilter;
-import com.edgestackers.core.datamodel.tote.TotePoolJurisdiction;
+import com.edgestackers.tote.hub.core.datamodel.core.ToteBetType;
+import com.edgestackers.tote.hub.core.datamodel.core.TotePoolJurisdiction;
 import jakarta.annotation.Nullable;
 import javafx.application.Platform;
 import javafx.beans.property.SimpleObjectProperty;

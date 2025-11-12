@@ -15,10 +15,8 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-import static com.edgestackers.core.datamodel.common.trading.RaceType.convertFrom;
 import static com.edgestackers.opticon.service.operations.OpticonStrategyContextSummaryFactory.createDefaultOpticonExoticContextSummary;
 import static com.edgestackers.opticon.service.operations.OpticonStrategyContextSummaryKeyFactory.createKey;
-import static com.edgestackers.tote.hub.core.datamodel.core.RaceCode.convertFromRaceType;
 import static com.edgestackers.tote.hub.core.datamodel.core.RaceCode.convertToRaceType;
 
 public class OpticonStrategyContextSummaryCacheRefresher {

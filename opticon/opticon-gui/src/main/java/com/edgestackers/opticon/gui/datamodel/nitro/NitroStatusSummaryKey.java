@@ -1,8 +1,8 @@
 package com.edgestackers.opticon.gui.datamodel.nitro;
 
-import com.edgestackers.core.datamodel.common.trading.RaceType;
-import com.edgestackers.core.datamodel.tote.ToteBetType;
-import com.edgestackers.core.datamodel.tote.TotePoolJurisdiction;
+import com.edgestackers.tote.hub.core.datamodel.core.RaceType;
+import com.edgestackers.tote.hub.core.datamodel.core.ToteBetType;
+import com.edgestackers.tote.hub.core.datamodel.core.TotePoolJurisdiction;
 
 public record NitroStatusSummaryKey(ToteBetType toteBetType,
                                     TotePoolJurisdiction jurisdiction,

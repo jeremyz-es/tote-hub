@@ -1,7 +1,8 @@
 package com.edgestackers.opticon.gui.datamodel.filter;
 
-import com.edgestackers.core.datamodel.tote.ToteBetType;
-import com.edgestackers.core.datamodel.tote.TotePoolJurisdiction;
+
+import com.edgestackers.tote.hub.core.datamodel.core.ToteBetType;
+import com.edgestackers.tote.hub.core.datamodel.core.TotePoolJurisdiction;
 
 import java.util.Objects;
 

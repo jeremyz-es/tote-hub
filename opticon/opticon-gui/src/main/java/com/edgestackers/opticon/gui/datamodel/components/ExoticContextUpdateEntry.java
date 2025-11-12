@@ -1,7 +1,7 @@
 package com.edgestackers.opticon.gui.datamodel.components;
 
-import com.edgestackers.tote.common.datamodel.context.ExecutionGatewayOrderStatus;
-import com.edgestackers.tote.common.datamodel.context.NitroContextStatus;
+import com.edgestackers.tote.hub.core.datamodel.context.ExecutionGatewayOrderStatus;
+import com.edgestackers.tote.hub.core.datamodel.context.NitroContextStatus;
 
 public class ExoticContextUpdateEntry {
     private final long epochNanosTimestamp;

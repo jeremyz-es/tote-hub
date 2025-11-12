@@ -6,8 +6,9 @@ import com.edgestackers.opticon.common.datamodel.OpticonOrderUpdate;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.edgestackers.core.util.TimeUtil.HMS_FORMATTER;
-import static com.edgestackers.core.util.TimeUtil.qldTimeFor;
+import static com.edgestackers.tote.hub.core.util.TimeUtil.HMS_FORMATTER;
+import static com.edgestackers.tote.hub.core.util.TimeUtil.qldTimeFor;
+
 
 public enum OpticonOrderUpdateEntryConverter {
     ;
